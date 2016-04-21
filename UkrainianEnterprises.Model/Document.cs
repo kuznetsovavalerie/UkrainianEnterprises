@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace UkrainianEnterprises.Model
+namespace UkrainianEnterprises.Common
 {
     /// <summary>
     /// Document needed to request in enterprises,
@@ -47,7 +47,7 @@ namespace UkrainianEnterprises.Model
         /// <value>
         /// The enterprise types, which are able to give such documents.
         /// </value>
-        public ICollection<EnterpriseType> EnterpriseTypes { get; set; }
+        public ICollection<EnterpriseCategory> EnterpriseTypes { get; set; }
 
         /// <summary>
         /// Gets or sets the enterprises.

@@ -11,10 +11,20 @@ namespace UkrainianEnterprises.Models
 
         public string Description { get; set; }
 
-        public int TypeID { get; set; }
+        public string Category { get; set; }
+
+        public int CategoryID { get; set; }
 
         public string PhoneNumber { get; set; }
 
         public string Email { get; set; }
+
+        public string WebSite { get; set; }
+
+        public bool IsContactPerson { get; set; }
+
+        public NewLocationViewModel HeadOffice { get; set; }
+
+        public NewEmployeeViewModel Director { get; set; }
     }
 }

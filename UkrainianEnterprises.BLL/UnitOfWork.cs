@@ -1,7 +1,7 @@
 ﻿using System;
 using UkrainianEnterprises.BLL.Service;
 using UkrainianEnterprises.DAL;
-using UkrainianEnterprises.Model;
+using UkrainianEnterprises.Common;
 
 namespace UkrainianEnterprises.BLL
 {
@@ -14,6 +14,7 @@ namespace UkrainianEnterprises.BLL
         private ManagerBase<Office> officeManager;
         private ManagerBase<Employee> employeeManager;
         private ManagerBase<Document> documentManager;
+        private EnterpriseCategoryManager enterpriseCategoryManager;
 
         public ManagerBase<Enterprise> EnterpriseManager
         {
@@ -96,6 +97,20 @@ namespace UkrainianEnterprises.BLL
                 }
 
                 return this.documentManager;
+            }
+        }
+
+        public EnterpriseCategoryManager EnterpriseCategoryManager
+        {
+            get
+            {
+                if (this.enterpriseCategoryManager == null)
+                {
+                    var repository = new Repository<EnterpriseCategory>(context);
+                    this.enterpriseCategoryManager = new EnterpriseCategoryManager(repository);
+                }
+
+                return this.enterpriseCategoryManager;
             }
         }
 

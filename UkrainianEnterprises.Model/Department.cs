@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace UkrainianEnterprises.Model
+namespace UkrainianEnterprises.Common
 {
     /// <summary>
     /// The Department inside single location

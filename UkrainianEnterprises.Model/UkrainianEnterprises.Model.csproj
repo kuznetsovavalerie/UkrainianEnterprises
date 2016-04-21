@@ -45,7 +45,7 @@
     <Compile Include="Education.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Enterprise.cs" />
-    <Compile Include="EnterpriseType.cs" />
+    <Compile Include="EnterpriseCategory.cs" />
     <Compile Include="Enums\LocationLevel.cs" />
     <Compile Include="Enums\PositionLevel.cs" />
     <Compile Include="Location.cs" />

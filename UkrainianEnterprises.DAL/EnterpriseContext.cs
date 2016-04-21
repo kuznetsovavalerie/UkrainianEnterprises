@@ -1,5 +1,5 @@
 ﻿using System.Data.Entity;
-using UkrainianEnterprises.Model;
+using UkrainianEnterprises.Common;
 
 namespace UkrainianEnterprises.DAL
 {
@@ -21,7 +21,7 @@ namespace UkrainianEnterprises.DAL
 
         public DbSet<Document> Documents { get; set; }
 
-        public DbSet<EnterpriseType> EnterpriseTypes { get; set; }
+        public DbSet<EnterpriseCategory> EnterpriseTypes { get; set; }
 
         public DbSet<Education> Educations { get; set; }
     }

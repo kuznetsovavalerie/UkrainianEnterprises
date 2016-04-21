@@ -10,8 +10,8 @@ namespace UkrainianEnterprises.DAL
 {
     public class Repository<TEntity> where TEntity : class
     {
-        private EnterpriseContext context;
-        private DbSet<TEntity> dbSet;
+        protected EnterpriseContext context;
+        protected DbSet<TEntity> dbSet;
 
         public Repository(EnterpriseContext context)
         {

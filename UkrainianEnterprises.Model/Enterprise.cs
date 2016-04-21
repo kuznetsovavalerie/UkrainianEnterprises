@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace UkrainianEnterprises.Model
+namespace UkrainianEnterprises.Common
 {
     public class Enterprise
     {
@@ -10,7 +10,7 @@ namespace UkrainianEnterprises.Model
 
         public string Description { get; set; }
 
-        public EnterpriseType Type { get; set; }
+        public EnterpriseCategory Category { get; set; }
 
         public string Website { get; set; }
 

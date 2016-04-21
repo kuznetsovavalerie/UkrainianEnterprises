@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using UkrainianEnterprises.BLL;
-using UkrainianEnterprises.Model;
+using UkrainianEnterprises.Common;
 using UkrainianEnterprises.Models;
 
 namespace UkrainianEnterprises.Controllers
@@ -40,6 +40,12 @@ namespace UkrainianEnterprises.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Creates the specified enterprise with common information.
+        /// </summary>
+        /// <param name="enterprise">The enterprise.</param>
+        /// <returns></returns>
+        [HttpPut]
         public ActionResult Create(NewEnterpriseViewModel enterprise)
         {
             var enterpriseEntity = AutoMapperConfiguration.Mapper.Map<NewEnterpriseViewModel, Enterprise>(enterprise);
@@ -48,7 +54,22 @@ namespace UkrainianEnterprises.Controllers
             {
                 try
                 {
+                    if(enterprise.CategoryID <= 0)
+                    {
+                        var category = new EnterpriseCategory() { Title = enterprise.Category };
+
+                        unitOfWork.EnterpriseCategoryManager.Create(category);
+                        unitOfWork.Save();
+
+                        enterpriseEntity.Category = category;
+                    }
+
                     unitOfWork.EnterpriseManager.Create(enterpriseEntity);
+                    unitOfWork.Save();
+
+                    var nextAction = enterprise.IsContactPerson ? "ContactRepresentative" : "";
+
+                    return RedirectToAction(nextAction, new { enterpriseID = enterpriseEntity.ID });
                 }
                 catch
                 {
@@ -57,6 +78,17 @@ namespace UkrainianEnterprises.Controllers
             }
 
             return RedirectToAction("");
+        }
+
+        [HttpPut]
+        public void AddHeadOffice()
+        {
+
+        }
+
+        public ActionResult Complete(int enterpriseID)
+        {
+            return View();
         }
     }
 }

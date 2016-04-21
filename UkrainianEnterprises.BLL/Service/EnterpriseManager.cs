@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UkrainianEnterprises.DAL;
-using UkrainianEnterprises.Model;
+using UkrainianEnterprises.Common;
 
 namespace UkrainianEnterprises.BLL.Service
 {

@@ -1,4 +1,4 @@
-﻿namespace UkrainianEnterprises.Model
+﻿namespace UkrainianEnterprises.Common
 {
     public enum LocationLevel
     {

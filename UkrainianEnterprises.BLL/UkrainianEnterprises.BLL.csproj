@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\EnterpriseCategoryManager.cs" />
     <Compile Include="Service\EnterpriseManager.cs" />
     <Compile Include="Service\ManagerBase.cs" />
     <Compile Include="UnitOfWork.cs" />
