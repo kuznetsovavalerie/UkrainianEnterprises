@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UkrainianEnterprises.BLL;
+﻿using System.Data.Entity;
+using UkrainianEnterprises.Model;
 
 namespace UkrainianEnterprises.DAL
 {

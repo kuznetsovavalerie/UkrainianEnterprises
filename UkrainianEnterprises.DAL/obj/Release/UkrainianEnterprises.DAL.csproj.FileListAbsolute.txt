@@ -1,0 +1,14 @@
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Release\UkrainianEnterprises.DAL.dll.config
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Release\UkrainianEnterprises.DAL.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Release\UkrainianEnterprises.DAL.pdb
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Release\EntityFramework.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Release\UkrainianEnterprises.Model.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Release\UkrainianEnterprises.Model.pdb
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Release\EntityFramework.xml
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\obj\Release\UkrainianEnterprises.DAL.csprojResolveAssemblyReference.cache
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\obj\Release\UkrainianEnterprises.DAL.Migrations.UpdateModelsProperties.resources
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\obj\Release\UkrainianEnterprises.DAL.csproj.GenerateResource.Cache
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\obj\Release\UkrainianEnterprises.DAL.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\obj\Release\UkrainianEnterprises.DAL.pdb

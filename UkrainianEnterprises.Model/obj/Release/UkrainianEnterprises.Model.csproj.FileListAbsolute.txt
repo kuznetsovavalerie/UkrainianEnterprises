@@ -1,0 +1,5 @@
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Model\bin\Release\UkrainianEnterprises.Model.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Model\bin\Release\UkrainianEnterprises.Model.pdb
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Model\obj\Release\UkrainianEnterprises.Model.csprojResolveAssemblyReference.cache
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Model\obj\Release\UkrainianEnterprises.Model.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Model\obj\Release\UkrainianEnterprises.Model.pdb

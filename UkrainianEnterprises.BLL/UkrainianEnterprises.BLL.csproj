@@ -30,7 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,18 +49,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Department.cs" />
-    <Compile Include="Document.cs" />
-    <Compile Include="Education.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="Enterprise.cs" />
-    <Compile Include="EnterpriseType.cs" />
-    <Compile Include="Enums\LocationLevel.cs" />
-    <Compile Include="Enums\PositionLevel.cs" />
-    <Compile Include="Location.cs" />
-    <Compile Include="Office.cs" />
-    <Compile Include="Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\EnterpriseManager.cs" />
+    <Compile Include="Service\ManagerBase.cs" />
+    <Compile Include="UnitOfWork.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UkrainianEnterprises.DAL\UkrainianEnterprises.DAL.csproj">
+      <Project>{277e11c4-7cba-4ffa-acc0-db2de7583caa}</Project>
+      <Name>UkrainianEnterprises.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UkrainianEnterprises.Model\UkrainianEnterprises.Model.csproj">
+      <Project>{b598305f-770a-46c5-adfa-1b8a4157dc86}</Project>
+      <Name>UkrainianEnterprises.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

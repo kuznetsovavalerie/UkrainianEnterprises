@@ -93,7 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UkrainianEnterprises\UkrainianEnterprises.PL.csproj">
-      <Project>{9476B66B-C07D-4C05-8B5B-A3AFEE7F4830}</Project>
+      <Project>{9476b66b-c07d-4c05-8b5b-a3afee7f4830}</Project>
       <Name>UkrainianEnterprises.PL</Name>
     </ProjectReference>
   </ItemGroup>
