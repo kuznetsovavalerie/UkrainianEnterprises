@@ -1080,6 +1080,7 @@
     <Content Include="Views\Enterprise\Create.cshtml" />
     <Content Include="Scripts\version.json" />
     <Content Include="Views\Enterprise\Complete.cshtml" />
+    <Content Include="Views\Shared\_AddLocationForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

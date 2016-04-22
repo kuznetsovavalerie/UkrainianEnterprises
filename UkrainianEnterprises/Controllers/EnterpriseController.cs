@@ -40,6 +40,19 @@ namespace UkrainianEnterprises.Controllers
             return View();
         }
 
+        public ActionResult Create()
+        {
+            var model = new NewEnterpriseViewModel()
+            {
+                HeadOffice = new NewLocationViewModel()
+                {
+                    Level = LocationLevel.HeadOffice
+                }
+            };
+
+            return View();
+        }
+
         /// <summary>
         /// Creates the specified enterprise with common information.
         /// </summary>
