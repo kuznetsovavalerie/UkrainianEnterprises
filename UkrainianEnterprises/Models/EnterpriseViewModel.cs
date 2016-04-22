@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UkrainianEnterprises.App_Code;
 
 namespace UkrainianEnterprises.Models
 {
@@ -9,6 +10,16 @@ namespace UkrainianEnterprises.Models
         public string Title { get; set; }
 
         public string Description { get; set; }
+
+        public string Address { get; set; }
+
+        public string GoogleMapsAPIUrl
+        {
+            get
+            {
+                return string.Format(UIConfiguration.GoogleMapsAPIUrl, this.Address);
+            }
+        }
 
         public string Website { get; set; }
 
