@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UkrainianEnterprises.BLL", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UkrainianEnterprises.DAL", "UkrainianEnterprises.DAL\UkrainianEnterprises.DAL.csproj", "{277E11C4-7CBA-4FFA-ACC0-DB2DE7583CAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UkrainianEnterprises.Model", "UkrainianEnterprises.Model\UkrainianEnterprises.Model.csproj", "{B598305F-770A-46C5-ADFA-1B8A4157DC86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UkrainianEnterprises.Common", "UkrainianEnterprises.Model\UkrainianEnterprises.Common.csproj", "{B598305F-770A-46C5-ADFA-1B8A4157DC86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

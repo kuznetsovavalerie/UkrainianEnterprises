@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity;
 using UkrainianEnterprises.Common;
+using UkrainianEnterprises.DAL.EntityFrameworkConfiguration;
 
 namespace UkrainianEnterprises.DAL
 {
@@ -24,5 +25,21 @@ namespace UkrainianEnterprises.DAL
         public DbSet<EnterpriseCategory> EnterpriseTypes { get; set; }
 
         public DbSet<Education> Educations { get; set; }
+
+        public DbSet<User> Users { get; set; }
+
+        public DbSet<Role> Roles { get; set; }
+
+        public DbSet<ExternalLogin> Logins { get; set; }
+
+        public DbSet<Claim> Claims { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new ClaimConfiguration());
+            modelBuilder.Configurations.Add(new ExternalLoginConfiguration());
+            modelBuilder.Configurations.Add(new RoleConfiguration());
+            modelBuilder.Configurations.Add(new UserConfiguration());
+        }
     }
 }

@@ -60,9 +60,9 @@
       <Project>{277e11c4-7cba-4ffa-acc0-db2de7583caa}</Project>
       <Name>UkrainianEnterprises.DAL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UkrainianEnterprises.Model\UkrainianEnterprises.Model.csproj">
+    <ProjectReference Include="..\UkrainianEnterprises.Model\UkrainianEnterprises.Common.csproj">
       <Project>{b598305f-770a-46c5-adfa-1b8a4157dc86}</Project>
-      <Name>UkrainianEnterprises.Model</Name>
+      <Name>UkrainianEnterprises.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

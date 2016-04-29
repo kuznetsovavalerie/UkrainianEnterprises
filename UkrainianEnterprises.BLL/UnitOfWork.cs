@@ -2,6 +2,8 @@
 using UkrainianEnterprises.BLL.Service;
 using UkrainianEnterprises.DAL;
 using UkrainianEnterprises.Common;
+using UkrainianEnterprises.DAL.Repositories;
+using UkrainianEnterprises.Common.Repositories;
 
 namespace UkrainianEnterprises.BLL
 {
@@ -15,6 +17,9 @@ namespace UkrainianEnterprises.BLL
         private ManagerBase<Employee> employeeManager;
         private ManagerBase<Document> documentManager;
         private EnterpriseCategoryManager enterpriseCategoryManager;
+        private ManagerBase<User> userManager;
+        private ManagerBase<ExternalLogin> loginManager;
+        private ManagerBase<Role> roleManager;
 
         public ManagerBase<Enterprise> EnterpriseManager
         {
@@ -111,6 +116,48 @@ namespace UkrainianEnterprises.BLL
                 }
 
                 return this.enterpriseCategoryManager;
+            }
+        }
+
+        public ManagerBase<User> UserManager
+        {
+            get
+            {
+                if (this.userManager == null)
+                {
+                    var repository = new UserRepository(context);
+                    this.userManager = new ManagerBase<User>(repository);
+                }
+
+                return this.userManager;
+            }
+        }
+
+        public ManagerBase<ExternalLogin> LoginManager
+        {
+            get
+            {
+                if (this.loginManager == null)
+                {
+                    var repository = new ExternalLoginRepository(context);
+                    this.loginManager = new ManagerBase<ExternalLogin>(repository);
+                }
+
+                return this.loginManager;
+            }
+        }
+
+        public ManagerBase<Role> RoleManager
+        {
+            get
+            {
+                if (this.roleManager == null)
+                {
+                    var repository = new RoleRepository(context);
+                    this.roleManager = new ManagerBase<Role>(repository);
+                }
+
+                return this.roleManager;
             }
         }
 

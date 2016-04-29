@@ -25,6 +25,8 @@ namespace UkrainianEnterprises.Models
 
         public string PhoneNumber { get; set; }
 
+        public string Email { get; set; }
+
         public ICollection<LocationPreviewViewModel> TopLocations { get; set; }
 
         public ICollection<EmployeePreviewViewModel> TopEmployees { get; set; }

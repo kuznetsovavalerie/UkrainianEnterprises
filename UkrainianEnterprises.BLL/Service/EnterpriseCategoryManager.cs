@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UkrainianEnterprises.Common;
-using UkrainianEnterprises.DAL;
+using UkrainianEnterprises.DAL.Repositories;
 
 namespace UkrainianEnterprises.BLL.Service
 {

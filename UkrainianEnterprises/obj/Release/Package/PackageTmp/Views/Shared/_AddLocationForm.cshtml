@@ -1,0 +1,51 @@
+﻿@model UkrainianEnterprises.Models.NewLocationViewModel
+@{
+    //ViewBag.Title = "_AddLocation";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <h5>Відділення:</h5>
+            @Html.RadioButtonFor(m => m.Level, UkrainianEnterprises.Common.LocationLevel.HeadOffice)
+            <label for="HeadOffice">Головне</label>
+            @Html.RadioButtonFor(m => m.Level, UkrainianEnterprises.Common.LocationLevel.Regional)
+            <label for="Regional">Обласне</label>
+            @Html.RadioButtonFor(m => m.Level, UkrainianEnterprises.Common.LocationLevel.District)
+            <label for="District">Районне</label>
+            @Html.RadioButtonFor(m => m.Level, UkrainianEnterprises.Common.LocationLevel.Regular)
+            <label for="Regular">Інше</label>
+        </div>
+        <div class="row required">
+            <label for="Title">Назва відділення:</label>
+            @Html.TextBoxFor(m => m.Title)
+        </div>
+        <div class="row">
+            <label for="PhoneNumber">Телефон приймальні:</label>
+            @Html.TextBoxFor(m => m.PhoneNumber)
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="row required">
+            <label for="Region">Область:</label>
+            @Html.TextBoxFor(m => m.Region)
+        </div>
+        <div class="row required">
+            <label for="Locality">Населений пункт:</label>
+            @Html.TextBoxFor(m => m.Locality)
+        </div>
+        <div class="row required">
+            <label for="Street">Вулиця:</label>
+            @Html.TextBoxFor(m => m.Street)
+        </div>
+        <div class="row required">
+            <label for="Building">Будинок:</label>
+            @Html.TextBoxFor(m => m.Building)
+        </div>
+        <div class="row">
+            <label for="Housing">Корпус:</label>
+            @Html.TextBoxFor(m => m.Housing)
+        </div>
+    </div>
+</div>
+
