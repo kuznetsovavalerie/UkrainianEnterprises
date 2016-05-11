@@ -4,6 +4,7 @@ using UkrainianEnterprises.DAL;
 using UkrainianEnterprises.Common;
 using UkrainianEnterprises.DAL.Repositories;
 using UkrainianEnterprises.Common.Repositories;
+using System.Threading.Tasks;
 
 namespace UkrainianEnterprises.BLL
 {
@@ -17,9 +18,9 @@ namespace UkrainianEnterprises.BLL
         private ManagerBase<Employee> employeeManager;
         private ManagerBase<Document> documentManager;
         private EnterpriseCategoryManager enterpriseCategoryManager;
-        private ManagerBase<User> userManager;
-        private ManagerBase<ExternalLogin> loginManager;
-        private ManagerBase<Role> roleManager;
+        private UserManager userManager;
+        private ExternalLoginManager loginManager;
+        private RoleManager roleManager;
 
         public ManagerBase<Enterprise> EnterpriseManager
         {
@@ -119,42 +120,42 @@ namespace UkrainianEnterprises.BLL
             }
         }
 
-        public ManagerBase<User> UserManager
+        public UserManager UserManager
         {
             get
             {
                 if (this.userManager == null)
                 {
                     var repository = new UserRepository(context);
-                    this.userManager = new ManagerBase<User>(repository);
+                    this.userManager = new UserManager(repository);
                 }
 
                 return this.userManager;
             }
         }
 
-        public ManagerBase<ExternalLogin> LoginManager
+        public ExternalLoginManager LoginManager
         {
             get
             {
                 if (this.loginManager == null)
                 {
                     var repository = new ExternalLoginRepository(context);
-                    this.loginManager = new ManagerBase<ExternalLogin>(repository);
+                    this.loginManager = new ExternalLoginManager(repository);
                 }
 
                 return this.loginManager;
             }
         }
 
-        public ManagerBase<Role> RoleManager
+        public RoleManager RoleManager
         {
             get
             {
                 if (this.roleManager == null)
                 {
                     var repository = new RoleRepository(context);
-                    this.roleManager = new ManagerBase<Role>(repository);
+                    this.roleManager = new RoleManager(repository);
                 }
 
                 return this.roleManager;
@@ -164,6 +165,11 @@ namespace UkrainianEnterprises.BLL
         public void Save()
         {
             this.context.SaveChanges();
+        }
+
+        public Task SaveChangesAsync()
+        {
+            return this.context.SaveChangesAsync();
         }
 
         private bool disposed = false;

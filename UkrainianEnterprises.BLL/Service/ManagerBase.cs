@@ -27,14 +27,29 @@ namespace UkrainianEnterprises.BLL.Service
             return this.repository.GetByID(id);
         }
 
+        public TEntity GetByID(Guid id)
+        {
+            return this.repository.GetByID(id);
+        }
+
         public void Create(TEntity entity)
         {
             this.repository.Insert(entity);
         }
 
+        public void Update(TEntity entity)
+        {
+            this.repository.Update(entity);
+        }
+
         public void Delete(int id)
         {
             this.repository.Delete(id);
+        }
+
+        public void Delete(TEntity entity)
+        {
+            this.repository.Delete(entity);
         }
     }
 }

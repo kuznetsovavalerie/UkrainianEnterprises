@@ -1,3 +1,4 @@
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\obj\Release\UkrainianEnterprises.PL.csprojResolveAssemblyReference.cache
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\ApplicationInsights.config
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\roslyn\csc.exe
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -87,6 +88,5 @@ C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\UkrainianEnterprises.DAL.pdb
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\EntityFramework.xml
-C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\obj\Release\UkrainianEnterprises.PL.csprojResolveAssemblyReference.cache
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\obj\Release\UkrainianEnterprises.dll
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\obj\Release\UkrainianEnterprises.pdb
