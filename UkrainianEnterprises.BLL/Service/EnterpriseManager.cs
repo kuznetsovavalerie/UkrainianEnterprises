@@ -1,4 +1,4 @@
-﻿using UkrainianEnterprises.Common;
+﻿using UkrainianEnterprises.Common.Entities;
 using UkrainianEnterprises.DAL.Repositories;
 
 namespace UkrainianEnterprises.BLL.Service

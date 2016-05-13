@@ -63,6 +63,8 @@ namespace UkrainianEnterprises
             //    ClientId = "",
             //    ClientSecret = ""
             //});
+
+            UnityConfig.RegisterComponents();
         }
     }
 }

@@ -1,14 +1,14 @@
 ﻿using System;
-using UkrainianEnterprises.BLL.Service;
-using UkrainianEnterprises.DAL;
-using UkrainianEnterprises.Common;
-using UkrainianEnterprises.DAL.Repositories;
-using UkrainianEnterprises.Common.Repositories;
 using System.Threading.Tasks;
+using UkrainianEnterprises.BLL.Service;
+using UkrainianEnterprises.Common.Entities;
+using UkrainianEnterprises.Common.Service;
+using UkrainianEnterprises.DAL;
+using UkrainianEnterprises.DAL.Repositories;
 
 namespace UkrainianEnterprises.BLL
 {
-    public class UnitOfWork : IDisposable
+    public class UnitOfWork : IUnitOfWork, IDisposable
     {
         private EnterpriseContext context = new EnterpriseContext();
         private ManagerBase<Enterprise> enterpriseManager;

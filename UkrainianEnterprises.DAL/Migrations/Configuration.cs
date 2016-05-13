@@ -9,7 +9,7 @@ namespace UkrainianEnterprises.DAL.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(UkrainianEnterprises.DAL.EnterpriseContext context)

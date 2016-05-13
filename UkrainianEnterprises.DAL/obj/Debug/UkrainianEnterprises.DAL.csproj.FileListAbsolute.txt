@@ -3,10 +3,14 @@ C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Debug\UkrainianEnterprises.DAL.pdb
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Debug\EntityFramework.dll
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Debug\UkrainianEnterprises.Model.dll
-C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Debug\UkrainianEnterprises.Model.pdb
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Debug\UkrainianEnterprises.Common.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Debug\UkrainianEnterprises.Common.pdb
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Debug\EntityFramework.xml
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\obj\Debug\UkrainianEnterprises.DAL.csprojResolveAssemblyReference.cache
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\obj\Debug\UkrainianEnterprises.DAL.Migrations.UpdateModelsProperties.resources
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.DAL\obj\Debug\UkrainianEnterprises.DAL.csproj.GenerateResource.Cache

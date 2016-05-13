@@ -1,5 +1,5 @@
 ﻿using System.Data.Entity.ModelConfiguration;
-using UkrainianEnterprises.Common;
+using UkrainianEnterprises.Common.Entities;
 
 namespace UkrainianEnterprises.DAL.EntityFrameworkConfiguration
 {
@@ -14,6 +14,12 @@ namespace UkrainianEnterprises.DAL.EntityFrameworkConfiguration
                 .HasColumnName("UserId")
                 .HasColumnType("uniqueidentifier")
                 .IsRequired();
+
+            Property(x => x.PasswordHash)
+                .HasColumnName("PasswordHash")
+                .HasColumnType("nvarchar")
+                .IsMaxLength()
+                .IsOptional();
 
             Property(x => x.PasswordHash)
                 .HasColumnName("PasswordHash")

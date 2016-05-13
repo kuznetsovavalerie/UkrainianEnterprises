@@ -5,11 +5,17 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using UkrainianEnterprises.BLL;
-using Entities = UkrainianEnterprises.Common;
+using Entities = UkrainianEnterprises.Common.Entities;
 
 namespace UkrainianEnterprises.Identity
 {
-    public class UserStore : IUserLoginStore<IdentityUser, Guid>, IUserClaimStore<IdentityUser, Guid>, IUserRoleStore<IdentityUser, Guid>, IUserPasswordStore<IdentityUser, Guid>, IUserSecurityStampStore<IdentityUser, Guid>, IUserStore<IdentityUser, Guid>, IDisposable
+    public class UserStore : 
+        IUserLoginStore<IdentityUser, Guid>, 
+        IUserClaimStore<IdentityUser, Guid>, 
+        IUserRoleStore<IdentityUser, Guid>, 
+        IUserPasswordStore<IdentityUser, Guid>, 
+        IUserSecurityStampStore<IdentityUser, Guid>, 
+        IUserStore<IdentityUser, Guid>, IDisposable
     {
         private readonly UnitOfWork _unitOfWork;
 

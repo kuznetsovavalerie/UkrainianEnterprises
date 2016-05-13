@@ -1,0 +1,6 @@
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Model\bin\Debug\UkrainianEnterprises.Common.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Model\bin\Debug\UkrainianEnterprises.Common.pdb
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Model\obj\Debug\UkrainianEnterprises.Common.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Model\obj\Debug\UkrainianEnterprises.Common.pdb

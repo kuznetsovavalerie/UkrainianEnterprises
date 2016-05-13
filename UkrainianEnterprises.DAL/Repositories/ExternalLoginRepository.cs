@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using UkrainianEnterprises.Common;
+using UkrainianEnterprises.Common.Entities;
 using UkrainianEnterprises.Common.Repositories;
 
 namespace UkrainianEnterprises.DAL.Repositories

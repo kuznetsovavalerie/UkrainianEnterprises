@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Globalization;
-using UkrainianEnterprises.Common;
+using UkrainianEnterprises.Common.Entities;
 using UkrainianEnterprises.DAL.Repositories;
 
 namespace UkrainianEnterprises.BLL.Service

@@ -1,4 +1,3 @@
-C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\obj\Release\UkrainianEnterprises.PL.csprojResolveAssemblyReference.cache
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\ApplicationInsights.config
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\roslyn\csc.exe
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -36,6 +35,10 @@ C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.Owin.Security.OAuth.dll
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.Practices.Unity.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Newtonsoft.Json.dll
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Owin.dll
@@ -51,6 +54,7 @@ C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\System.Web.WebPages.Razor.dll
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\UkrainianEnterprises.BLL.dll
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\UkrainianEnterprises.Common.dll
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Unity.Mvc5.dll
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\WebGrease.dll
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\UkrainianEnterprises.DAL.dll
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\EntityFramework.dll
@@ -63,6 +67,11 @@ C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.ApplicationInsights.xml
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.Practices.Unity.xml
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\System.Web.Helpers.xml
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\System.Web.Mvc.xml
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\System.Web.Optimization.xml
@@ -88,5 +97,6 @@ C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\UkrainianEnterprises.DAL.pdb
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\bin\EntityFramework.xml
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\obj\Release\UkrainianEnterprises.PL.csprojResolveAssemblyReference.cache
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\obj\Release\UkrainianEnterprises.dll
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises\obj\Release\UkrainianEnterprises.pdb

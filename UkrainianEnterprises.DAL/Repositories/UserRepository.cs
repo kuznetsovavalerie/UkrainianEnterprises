@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using UkrainianEnterprises.Common;
+using UkrainianEnterprises.Common.Entities;
 using UkrainianEnterprises.Common.Repositories;
 
 namespace UkrainianEnterprises.DAL.Repositories

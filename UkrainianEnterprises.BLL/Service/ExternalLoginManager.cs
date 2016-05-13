@@ -1,4 +1,4 @@
-﻿using UkrainianEnterprises.Common;
+﻿using UkrainianEnterprises.Common.Entities;
 using UkrainianEnterprises.Common.Repositories;
 using UkrainianEnterprises.DAL.Repositories;
 

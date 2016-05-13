@@ -4,3 +4,4 @@ C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Model\bin\Release\Microsoft.AspNet.Identity.Core.xml
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Model\obj\Release\UkrainianEnterprises.Common.dll
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Model\obj\Release\UkrainianEnterprises.Common.pdb
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Model\obj\Release\UkrainianEnterprises.Common.csprojResolveAssemblyReference.cache

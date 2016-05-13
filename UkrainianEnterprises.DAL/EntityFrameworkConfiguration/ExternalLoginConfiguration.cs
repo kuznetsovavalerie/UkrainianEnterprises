@@ -1,5 +1,5 @@
 ﻿using System.Data.Entity.ModelConfiguration;
-using UkrainianEnterprises.Common;
+using UkrainianEnterprises.Common.Entities;
 
 namespace UkrainianEnterprises.DAL.EntityFrameworkConfiguration
 {

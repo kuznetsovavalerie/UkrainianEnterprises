@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
-using System.Collections.Generic;
-using UkrainianEnterprises.Common;
+using UkrainianEnterprises.Common.Entities;
 using UkrainianEnterprises.Models;
 
 namespace UkrainianEnterprises
