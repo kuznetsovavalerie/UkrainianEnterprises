@@ -1,15 +1,11 @@
-﻿using System;
-using System.Globalization;
-using System.Linq;
-using System.Security.Claims;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.Owin.Security;
+using System;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin.Security;
-using UkrainianEnterprises.Models;
 using UkrainianEnterprises.Identity;
+using UkrainianEnterprises.Models;
 
 namespace UkrainianEnterprises.Controllers
 {
@@ -21,6 +17,9 @@ namespace UkrainianEnterprises.Controllers
         public AccountController(UserManager<IdentityUser, Guid> userManager)
         {
             _userManager = userManager;
+            var userValidator = _userManager.UserValidator as UserValidator<IdentityUser, Guid>;
+            userValidator.AllowOnlyAlphanumericUserNames = false;
+            userValidator.RequireUniqueEmail = true;
         }
         
         //
@@ -74,7 +73,7 @@ namespace UkrainianEnterprises.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new IdentityUser { UserName = model.Email };
+                var user = new IdentityUser(model.Email);
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

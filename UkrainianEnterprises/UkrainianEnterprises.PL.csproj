@@ -234,6 +234,11 @@
     <Compile Include="Identity\IdentityUser.cs" />
     <Compile Include="Identity\RoleStore.cs" />
     <Compile Include="Identity\UserStore.cs" />
+    <Compile Include="Localization\Resource.uk-UA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.uk-UA.resx</DependentUpon>
+    </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\EmployeeProfile.cs" />
     <Compile Include="Models\EnterpriseViewModel.cs" />
@@ -319,7 +324,12 @@
     <Content Include="Views\Shared\_AddLocationForm.cshtml" />
     <Content Include="Views\Enterprise\View.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\Resource.uk-UA.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.uk-UA.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

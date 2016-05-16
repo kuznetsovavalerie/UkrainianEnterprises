@@ -9,8 +9,8 @@ namespace UkrainianEnterprises.DAL.EntityFrameworkConfiguration
         {
             ToTable("User");
 
-            HasKey(x => x.UserId)
-                .Property(x => x.UserId)
+            HasKey(x => x.Id)
+                .Property(x => x.Id)
                 .HasColumnName("UserId")
                 .HasColumnType("uniqueidentifier")
                 .IsRequired();

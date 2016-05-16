@@ -28,7 +28,7 @@ namespace UkrainianEnterprises.Common.Entities
                 }
 
                 this._user = value;
-                this.UserId = value.UserId;
+                this.UserId = value.Id;
             }
         }
     }

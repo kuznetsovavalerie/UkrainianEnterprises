@@ -72,3 +72,4 @@ C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Tests\obj\Release\UkrainianEnterprises.Tests.dll
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Tests\obj\Release\UkrainianEnterprises.Tests.pdb
 C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Tests\obj\Release\UkrainianEnterprises.Tests.csprojResolveAssemblyReference.cache
+C:\Users\vkuznetsova\documents\visual studio 2015\Projects\UkrainianEnterprises\UkrainianEnterprises.Tests\bin\Release\uk-UA\UkrainianEnterprises.resources.dll

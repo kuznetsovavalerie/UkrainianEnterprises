@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using UkrainianEnterprises.Common.Entities;
 
@@ -11,5 +12,13 @@ namespace UkrainianEnterprises.Common.Repositories
         Task<User> FindByUserNameAsync(string username);
 
         Task<User> FindByUserNameAsync(CancellationToken cancellationToken, string username);
+
+        User FindByEmail(string email);
+
+        Task<User> FindByEmailAsync(string email);
+
+        string GetEmail(Guid id);
+
+        bool GetEmailConfirmed(Guid id);
     }
 }

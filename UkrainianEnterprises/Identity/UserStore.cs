@@ -15,7 +15,8 @@ namespace UkrainianEnterprises.Identity
         IUserRoleStore<IdentityUser, Guid>, 
         IUserPasswordStore<IdentityUser, Guid>, 
         IUserSecurityStampStore<IdentityUser, Guid>, 
-        IUserStore<IdentityUser, Guid>, IDisposable
+        IUserStore<IdentityUser, Guid>, IDisposable,
+        IUserEmailStore<IdentityUser, Guid>
     {
         private readonly UnitOfWork _unitOfWork;
 
@@ -309,24 +310,58 @@ namespace UkrainianEnterprises.Identity
         }
         #endregion
 
+        #region IUserEmailStore<IdentityUser, Guid> Members        
+        public Task<IdentityUser> FindByEmailAsync(string email)
+        {
+            var user = _unitOfWork.UserManager.FindByEmail(email);
+            return Task.FromResult<IdentityUser>(getIdentityUser(user));
+        }
+
+        public Task<string> GetEmailAsync(IdentityUser user)
+        {
+            return Task.FromResult<string>(user.Email);
+        }
+        
+        public Task<bool> GetEmailConfirmedAsync(IdentityUser user)
+        {
+            return Task.FromResult<bool>(_unitOfWork.UserManager.GetEmailConfirmed(user.Id));
+        }
+        
+        public Task SetEmailAsync(IdentityUser user, string email)
+        {
+            var entityUser = _unitOfWork.UserManager.GetByID(user.Id);
+
+            entityUser.Email = email;
+            _unitOfWork.UserManager.Update(entityUser);
+
+            return _unitOfWork.SaveChangesAsync();
+        }
+        
+        public Task SetEmailConfirmedAsync(IdentityUser user, bool confirmed)
+        {
+            var entityUser = _unitOfWork.UserManager.GetByID(user.Id);
+
+            entityUser.EmailConfirmed = confirmed;
+            _unitOfWork.UserManager.Update(entityUser);
+
+            return _unitOfWork.SaveChangesAsync();
+        }
+        #endregion
+
         #region Private Methods
         private Entities.User getUser(IdentityUser identityUser)
         {
             if (identityUser == null)
                 return null;
 
-            var user = new Entities.User();
-            populateUser(user, identityUser);
+            var user = AutoMapperConfiguration.Mapper.Map<Entities.User>(identityUser);
 
             return user;
         }
 
         private void populateUser(Entities.User user, IdentityUser identityUser)
         {
-            user.UserId = identityUser.Id;
-            user.UserName = identityUser.UserName;
-            user.PasswordHash = identityUser.PasswordHash;
-            user.SecurityStamp = identityUser.SecurityStamp;
+            user = AutoMapperConfiguration.Mapper.Map<Entities.User>(identityUser);
         }
 
         private IdentityUser getIdentityUser(Entities.User user)
@@ -342,7 +377,7 @@ namespace UkrainianEnterprises.Identity
 
         private void populateIdentityUser(IdentityUser identityUser, Entities.User user)
         {
-            identityUser.Id = user.UserId;
+            identityUser.Id = user.Id;
             identityUser.UserName = user.UserName;
             identityUser.PasswordHash = user.PasswordHash;
             identityUser.SecurityStamp = user.SecurityStamp;

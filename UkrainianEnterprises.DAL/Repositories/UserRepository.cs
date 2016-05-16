@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using UkrainianEnterprises.Common.Entities;
@@ -26,6 +27,26 @@ namespace UkrainianEnterprises.DAL.Repositories
         public Task<User> FindByUserNameAsync(System.Threading.CancellationToken cancellationToken, string username)
         {
             return Set.FirstOrDefaultAsync(x => x.UserName == username, cancellationToken);
+        }
+
+        public User FindByEmail(string email)
+        {
+            return Set.FirstOrDefault(x => x.Email == email);
+        }
+
+        public Task<User> FindByEmailAsync(string email)
+        {
+            return Set.FirstOrDefaultAsync(x => x.Email == email);
+        }
+
+        public string GetEmail(Guid id)
+        {
+            return Set.FirstOrDefault(x => x.Id == id)?.Email;
+        }
+
+        public bool GetEmailConfirmed(Guid id)
+        {
+            return Set.FirstOrDefault(x => x.Id == id)?.EmailConfirmed ?? false;
         }
     }
 }

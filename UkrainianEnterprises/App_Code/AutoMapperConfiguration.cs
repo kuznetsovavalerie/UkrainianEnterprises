@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using UkrainianEnterprises.Common.Entities;
+using UkrainianEnterprises.Identity;
 using UkrainianEnterprises.Models;
 
 namespace UkrainianEnterprises
@@ -23,6 +24,8 @@ namespace UkrainianEnterprises
                 cfg.CreateMap<Enterprise, EnterpriseViewModel>();
                 cfg.CreateMap<Location, LocationPreviewViewModel>();
                 cfg.CreateMap<NewEnterpriseViewModel, Enterprise>();
+                cfg.CreateMap<IdentityUser, User>().BeforeMap((s, d) => d.EmailConfirmed = false);
+                cfg.CreateMap<User, IdentityUser>();
             });
 
             _mapper = enterpriseConfig.CreateMapper();

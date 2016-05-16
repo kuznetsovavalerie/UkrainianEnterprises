@@ -10,10 +10,11 @@ namespace UkrainianEnterprises.Identity
             this.Id = Guid.NewGuid();
         }
 
-        public IdentityUser(string userName)
+        public IdentityUser(string email)
             : this()
         {
-            this.UserName = userName;
+            this.UserName = email;
+            this.Email = email;
         }
 
         public Guid Id { get; set; }
