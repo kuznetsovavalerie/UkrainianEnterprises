@@ -319,7 +319,7 @@ namespace UkrainianEnterprises.Identity
 
         public Task<string> GetEmailAsync(IdentityUser user)
         {
-            return Task.FromResult<string>(user.Email);
+            return Task.FromResult<string>(user.Email ?? _unitOfWork.UserManager.GetEmail(user.Id));
         }
         
         public Task<bool> GetEmailConfirmedAsync(IdentityUser user)
