@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UkrainianEnterprises.App_Code;
+using UkrainianEnterprises.Models.Employee;
 
 namespace UkrainianEnterprises.Models
 {

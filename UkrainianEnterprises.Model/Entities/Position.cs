@@ -36,5 +36,13 @@
         /// The level of position importance.
         /// </value>
         public PositionLevel Level { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="Position"/> is approved.
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if approved; otherwise, <c>false</c>.
+        /// </value>
+        public bool Approved { get; set; }
     }
 }

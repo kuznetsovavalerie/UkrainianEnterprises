@@ -16,6 +16,7 @@ namespace UkrainianEnterprises.BLL
         private ManagerBase<Department> departmentManager;
         private ManagerBase<Office> officeManager;
         private ManagerBase<Employee> employeeManager;
+        private ManagerBase<Position> positionManager;
         private ManagerBase<Document> documentManager;
         private EnterpriseCategoryManager enterpriseCategoryManager;
         private UserManager userManager;
@@ -92,6 +93,20 @@ namespace UkrainianEnterprises.BLL
             }
         }
 
+        public ManagerBase<Position> PositionManager
+        {
+            get
+            {
+                if (this.positionManager == null)
+                {
+                    var repository = new Repository<Position>(context);
+                    this.positionManager = new ManagerBase<Position>(repository);
+                }
+
+                return this.positionManager;
+            }
+        }
+
         public ManagerBase<Document> DocumentManager
         {
             get
@@ -162,7 +177,7 @@ namespace UkrainianEnterprises.BLL
             }
         }
 
-        public void Save()
+        public void SaveChanges()
         {
             this.context.SaveChanges();
         }

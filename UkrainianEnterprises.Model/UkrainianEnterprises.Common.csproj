@@ -48,7 +48,6 @@
     <Compile Include="Entities\Comment.cs" />
     <Compile Include="Entities\Department.cs" />
     <Compile Include="Entities\Document.cs" />
-    <Compile Include="Entities\Education.cs" />
     <Compile Include="Entities\Employee.cs" />
     <Compile Include="Entities\Enterprise.cs" />
     <Compile Include="Entities\EnterpriseCategory.cs" />

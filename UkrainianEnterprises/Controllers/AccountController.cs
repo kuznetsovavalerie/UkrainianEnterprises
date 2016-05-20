@@ -6,6 +6,7 @@ using System;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using UkrainianEnterprises.App_Code;
 using UkrainianEnterprises.Identity;
 using UkrainianEnterprises.Models;
 
@@ -87,12 +88,10 @@ namespace UkrainianEnterprises.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new IdentityUser(model.Email);
+                var user = AutoMapperConfiguration.Mapper.Map<IdentityUser>(model);
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    await SignInAsync(user, isPersistent: false);
-
                     // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     string code = await _userManager.GenerateEmailConfirmationTokenAsync(user.Id);
@@ -117,7 +116,14 @@ namespace UkrainianEnterprises.Controllers
             {
                 return View("Error");
             }
-            var result = await _userManager.ConfirmEmailAsync(GetGuid(userId), code);
+            var result = await _userManager.ConfirmEmailAsync(GuidHelper.GetGuid(userId), code);
+
+            if (result.Succeeded)
+            {
+                var user = _userManager.FindById(GuidHelper.GetGuid(userId));
+                await SignInAsync(user, isPersistent: false);
+            }
+
             return View(result.Succeeded ? "ConfirmEmail" : "Error");
         }
 
@@ -316,7 +322,9 @@ namespace UkrainianEnterprises.Controllers
 
         #region Helpers
         // Used for XSRF protection when adding external logins
-        private const string XsrfKey = "XsrfId"; private async Task SignInAsync(IdentityUser user, bool isPersistent)
+        private const string XsrfKey = "XsrfId";
+
+        private async Task SignInAsync(IdentityUser user, bool isPersistent)
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ExternalCookie);
             var identity = await _userManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
@@ -346,13 +354,6 @@ namespace UkrainianEnterprises.Controllers
                 return Redirect(returnUrl);
             }
             return RedirectToAction("Index", "Home");
-        }
-
-        private Guid GetGuid(string value)
-        {
-            var result = default(Guid);
-            Guid.TryParse(value, out result);
-            return result;
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult

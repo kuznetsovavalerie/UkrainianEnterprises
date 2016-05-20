@@ -82,6 +82,18 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
       <publishTime>02/13/2015 12:16:42</publishTime>
     </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>05/05/2014 11:25:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Configuration.dll">
+      <publishTime>10/05/2015 09:37:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>10/05/2015 09:37:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.RegistrationByConvention.dll">
+      <publishTime>10/05/2015 09:37:20</publishTime>
+    </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>04/23/2012 15:23:58</publishTime>
     </File>
@@ -157,17 +169,23 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/System.Web.WebPages.Razor.dll">
       <publishTime>01/28/2015 03:04:30</publishTime>
     </File>
+    <File Include="bin/uk-UA/UkrainianEnterprises.resources.dll">
+      <publishTime>05/17/2016 17:41:27</publishTime>
+    </File>
     <File Include="bin/UkrainianEnterprises.BLL.dll">
-      <publishTime>04/29/2016 18:19:34</publishTime>
+      <publishTime>05/17/2016 12:00:23</publishTime>
     </File>
     <File Include="bin/UkrainianEnterprises.Common.dll">
-      <publishTime>04/29/2016 18:19:33</publishTime>
+      <publishTime>05/17/2016 12:00:22</publishTime>
     </File>
     <File Include="bin/UkrainianEnterprises.DAL.dll">
-      <publishTime>04/29/2016 18:19:33</publishTime>
+      <publishTime>05/17/2016 12:00:23</publishTime>
     </File>
     <File Include="bin/UkrainianEnterprises.dll">
-      <publishTime>04/29/2016 18:38:57</publishTime>
+      <publishTime>05/17/2016 17:41:26</publishTime>
+    </File>
+    <File Include="bin/Unity.Mvc5.dll">
+      <publishTime>10/29/2015 01:53:36</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>09/10/2013 17:28:38</publishTime>
@@ -200,7 +218,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/13/2016 11:57:05</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>04/26/2016 17:06:36</publishTime>
+      <publishTime>05/12/2016 14:55:55</publishTime>
     </File>
     <File Include="Scripts/ai.0.15.0-build58334.js">
       <publishTime>04/13/2016 11:58:45</publishTime>
@@ -284,7 +302,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/13/2016 11:57:41</publishTime>
     </File>
     <File Include="Views/Account/Register.cshtml">
-      <publishTime>04/13/2016 11:57:41</publishTime>
+      <publishTime>05/13/2016 18:22:43</publishTime>
     </File>
     <File Include="Views/Account/ResetPassword.cshtml">
       <publishTime>04/13/2016 11:57:41</publishTime>
@@ -362,7 +380,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/13/2016 11:57:05</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/29/2016 18:22:35</publishTime>
+      <publishTime>05/17/2016 17:46:24</publishTime>
     </File>
   </ItemGroup>
 </Project>

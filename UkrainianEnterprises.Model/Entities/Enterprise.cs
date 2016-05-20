@@ -56,5 +56,13 @@ namespace UkrainianEnterprises.Common.Entities
         public ICollection<Employee> Employees { get; set; }
 
         public ICollection<Document> Documents { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="Enterprise"/> is approved.
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if approved; otherwise, <c>false</c>.
+        /// </value>
+        public bool Approved { get; set; }
     }
 }

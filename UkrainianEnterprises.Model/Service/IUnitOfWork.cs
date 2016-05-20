@@ -5,7 +5,7 @@ namespace UkrainianEnterprises.Common.Service
 {
     public interface IUnitOfWork
     {
-        void Save();
+        void SaveChanges();
 
         Task SaveChangesAsync();
     }

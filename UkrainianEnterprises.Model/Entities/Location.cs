@@ -46,5 +46,13 @@ namespace UkrainianEnterprises.Common.Entities
         /// The departments.
         /// </value>
         public ICollection<Department> Departments { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="Location"/> is approved.
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if approved; otherwise, <c>false</c>.
+        /// </value>
+        public bool Approved { get; set; }
     }
 }

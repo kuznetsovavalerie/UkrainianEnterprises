@@ -1,0 +1,13 @@
+﻿@model UkrainianEnterprises.Models.EmployeePreviewViewModel
+
+<div class="employee-preview">
+    <div class="row text-center">
+        <img src="@Model.PhotoUrl" />
+    </div>
+    <div class="row text-center">
+        <a href="~/temp-users-url/@Model.ID">@Model.FullName</a>
+    </div>
+    <div class="row employee-position text-center">
+        @Model.Position
+    </div>
+</div>

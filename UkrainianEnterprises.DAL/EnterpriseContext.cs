@@ -24,8 +24,6 @@ namespace UkrainianEnterprises.DAL
 
         public DbSet<EnterpriseCategory> EnterpriseTypes { get; set; }
 
-        public DbSet<Education> Educations { get; set; }
-
         public DbSet<User> Users { get; set; }
 
         public DbSet<Role> Roles { get; set; }

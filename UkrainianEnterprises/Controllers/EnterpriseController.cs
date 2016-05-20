@@ -70,13 +70,13 @@ namespace UkrainianEnterprises.Controllers
                         var category = new EnterpriseCategory() { Title = enterprise.Category };
 
                         unitOfWork.EnterpriseCategoryManager.Create(category);
-                        unitOfWork.Save();
+                        unitOfWork.SaveChanges();
 
                         enterpriseEntity.Category = category;
                     }
 
                     unitOfWork.EnterpriseManager.Create(enterpriseEntity);
-                    unitOfWork.Save();
+                    unitOfWork.SaveChanges();
 
                     var nextAction = enterprise.IsContactPerson ? "ContactRepresentative" : "";
 

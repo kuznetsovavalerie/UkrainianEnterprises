@@ -1,0 +1,72 @@
+﻿@model UkrainianEnterprises.Models.NewEnterpriseViewModel
+@{
+    ViewBag.Title = "Create";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <h5>Загальна інформация</h5>
+        </div>
+        <div class="row required">
+            <label for="Title">Повна назва: </label>
+            @Html.TextBoxFor(m => m.Title)
+        </div>
+        <div class="row">
+            <label for="Description required">Діяльність: </label>
+            @Html.TextBoxFor(m => m.Description)
+        </div>
+        <div class="row">
+            <label for="Type">Категорія: </label>
+            @Html.TextBoxFor(m => m.Category)
+        </div>
+        <div class="row">
+            <h5>Голова установи</h5>
+        </div>
+        <div class="row required">
+            <label for="Type">Прізвище: </label>
+            @Html.TextBoxFor(m => m.Director.LastName)
+        </div>
+        <div class="row required">
+            <label for="Type">Ім'я: </label>
+            @Html.TextBoxFor(m => m.Director.FirstName)
+        </div>
+        <div class="row">
+            <label for="Type">Побатькові: </label>
+            @Html.TextBoxFor(m => m.Director.Patronymic)
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+            <h5>Контакти</h5>
+        </div>
+        <div class="row">
+            <label for="PhoneNumber required">Номер телефону: </label>
+            @Html.TextBoxFor(m => m.PhoneNumber)
+        </div>
+        <div class="row">
+            <label for="Email">Електронна пошта: </label>
+            @Html.TextBoxFor(m => m.Email)
+        </div>
+        <div class="row">
+            <label for="WebSite">Веб-сторінка: </label>
+            @Html.TextBoxFor(m => m.WebSite)
+        </div>
+        <div class="row">
+            @Html.CheckBoxFor(m => m.IsContactPerson)
+            <label for="IsContactPerson">Я - представник установи</label>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 pull-right">
+        <a href="javascript:void(0);" class="btn btn-primary">Далі</a>
+    </div>
+</div>
+@Html.Partial("_AddLocationForm", Model.HeadOffice)
+<div class="row hidden">
+    <div class="col-md-4 pull-right">
+        <a href="javascript:void(0);" class="btn btn-primary">Додати установу</a>
+    </div>
+</div>
+
